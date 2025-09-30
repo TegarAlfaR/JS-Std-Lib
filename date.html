@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const date1 = new Date()
+        console.info(date1)
+
+        const date2 = new Date(2021, 0, 1)
+        console.info(date2)
+
+        const date3 = new Date(2020, 10, 10, 1, 0, 0, 0)
+        console.info(date3)
+
+        const timestamp = Date.now()
+        console.info(timestamp)
+
+        const dateUnix = new Date(timestamp)
+        console.info(dateUnix)
+
+        console.info(dateUnix.getTime())
+
+        const parseTimestam = Date.parse("2020-12-18T10:10:10.123+07:00")
+        console.info(parseTimestam)
+
+        const parseDate = new Date(parseTimestam)
+        console.info(parseDate)
+
+        const date = new Date()
+        console.info(date.getFullYear())
+        console.info(date.getMonth())
+        console.info(date.getDate())
+        console.info(date.getDay())
+        console.info(date.getHours())
+        console.info(date.getMinutes())
+        console.info(date.getSeconds())
+        console.info(date.getMilliseconds())
+        console.info(date.getTimezoneOffset())
+    </script>
+</body>
+
+</html>
