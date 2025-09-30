@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        {
+
+            // object seal and freeze
+            const person = {
+                firstName: "Tegar",
+                lastName: "Rizzi"
+            }
+
+            // Object.freeze(person)
+            Object.seal(person)
+
+            console.info(person)
+
+            person.firstName = "budi"
+            console.info(person)
+            delete person.lastName
+            console.info(person)
+        }
+
+        {
+            // object assign
+            const target = {
+                firstName: "Tegar"
+            }
+
+            const source = {
+                // firstName: "budi",
+                lastName: "Rizzi"
+            }
+
+            Object.assign(target, source)
+            console.info(target)
+            console.info(source)
+        }
+
+        {
+            // object property name & value
+            const Orang = {
+                firstName: "Tegar",
+                lastName: "Kurniawan"
+            }
+
+            console.info(Object.values(Orang))
+            console.info(Object.getOwnPropertyNames(Orang))
+        }
+    </script>
+</body>
+
+</html>
